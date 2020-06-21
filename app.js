@@ -53,8 +53,6 @@ app.get("/", function (req, res) {
       Item.insertMany(defaultItems, (err) => {
         if (err) {
           console.log(error);
-        } else {
-          console.log("Success");
         }
       });
       res.redirect("/");
